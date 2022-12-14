@@ -70,4 +70,5 @@ pub fn part2() {
                 _ => panic!()
             }
         });
+        println!();
 }
