@@ -5,7 +5,7 @@ use itertools::{Itertools, iproduct};
 pub fn build_graph() -> (HashMap<(usize, usize), Vec<(usize,usize)>>, (usize, usize), (usize, usize)) {
     let mut graph = HashMap::new();
 
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
         .lines()
         .map(|line| line.chars().collect_vec())
         .collect_vec();
@@ -85,7 +85,7 @@ pub fn part1() {
 pub fn part2() {
     let (graph, _start, end) = build_graph();
 
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
         .lines()
         .map(|line| line.chars().collect_vec())
         .collect_vec();

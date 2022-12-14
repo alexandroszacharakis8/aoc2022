@@ -81,7 +81,7 @@ pub fn get_next_direction(current: (i64, i64), next: (i64, i64)) -> String {
 }
 
 pub fn part1() {
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
         .lines()
         .map(|line| line.split_whitespace().collect_vec());
 
@@ -103,7 +103,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
         .lines()
         .map(|line| line.split_whitespace().collect_vec());
 

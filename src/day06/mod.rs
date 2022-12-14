@@ -1,7 +1,7 @@
 use itertools::Itertools;
 
 pub fn part1() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let shifted_by1 = &input[1..];
     let shifted_by2 = &input[2..];
     let shifted_by3 = &input[3..];
@@ -20,7 +20,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let input_cloned = input.chars().collect_vec();
     for (i, c) in input.chars().enumerate() {
         let mut v = Vec::new();

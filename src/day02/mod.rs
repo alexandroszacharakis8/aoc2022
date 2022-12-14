@@ -56,7 +56,7 @@ pub fn transform(game: &str) -> String {
 }
 
 pub fn part1() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let result = input
         .lines()
         .filter(|l| !l.is_empty())
@@ -66,7 +66,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let result = input
         .lines()
         .filter(|l| !l.is_empty())

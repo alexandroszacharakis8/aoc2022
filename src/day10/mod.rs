@@ -4,7 +4,7 @@ use itertools::Itertools;
 
 pub fn part1() {
     let target_values = vec![20,60,100,140,180,220];
-    let result = include_str!("input")
+    let result = include_str!("input.txt")
         .lines()
         .map(|line| line.split_whitespace().collect_vec())
         .fold((0, 1, 0, &target_values[..]), |(cycle, x, sum, list), command| {
@@ -34,7 +34,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let _ = include_str!("input")
+    let _ = include_str!("input.txt")
         .lines()
         .map(|line| line.split_whitespace().collect_vec())
         .fold((0, 1), |(cycle, x), command| {

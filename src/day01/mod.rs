@@ -3,7 +3,7 @@ use std::str::FromStr;
 use itertools::Itertools;
 
 pub fn part1() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let result = input
         .split("\n\n")
         .map(|el| 
@@ -18,7 +18,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let result = input
         .split("\n\n")
         .map(|el| 

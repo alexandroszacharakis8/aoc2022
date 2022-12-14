@@ -48,7 +48,7 @@ pub fn apply_move_p2((times, from, to): &(usize, usize, usize), stacks: &mut Vec
 }
 
 pub fn part1() {
-    let (stacks, moves) = include_str!("input").split("\n\n").map(|el| el.lines().collect_vec()).collect_tuple().unwrap();
+    let (stacks, moves) = include_str!("input.txt").split("\n\n").map(|el| el.lines().collect_vec()).collect_tuple().unwrap();
     let (mut stacks, moves) = (get_stacks(stacks), get_moves(moves));
     for mov in moves {
         apply_move_p1(&mov, &mut stacks);
@@ -61,7 +61,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let (stacks, moves) = include_str!("input").split("\n\n").map(|el| el.lines().collect_vec()).collect_tuple().unwrap();
+    let (stacks, moves) = include_str!("input.txt").split("\n\n").map(|el| el.lines().collect_vec()).collect_tuple().unwrap();
     let (mut stacks, moves) = (get_stacks(stacks), get_moves(moves));
     for mov in moves {
         apply_move_p2(&mov, &mut stacks);

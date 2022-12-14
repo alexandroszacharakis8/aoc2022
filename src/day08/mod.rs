@@ -33,7 +33,7 @@ pub fn scenic_score(grid: &Vec<Vec<char>>, i: usize, j: usize) -> usize {
 }
 
 pub fn part1() {
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
     .lines()
     .map(|line| line.chars().collect_vec())
     .collect_vec();
@@ -47,7 +47,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
     .lines()
     .map(|line| line.chars().collect_vec())
     .collect_vec();

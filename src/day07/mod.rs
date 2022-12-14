@@ -27,7 +27,7 @@ pub fn traverse(lines: &mut Vec<Vec<&str>>, result: &mut Vec<u64>) -> u64 {
 }
 
 pub fn part1() {
-    let mut input = include_str!("input")
+    let mut input = include_str!("input.txt")
         .lines()
         .map(|line| line.split(" ").collect_vec()).rev().collect_vec();
     let mut sizes = Vec::new();
@@ -37,7 +37,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let mut input = include_str!("input")
+    let mut input = include_str!("input.txt")
         .lines()
         .map(|line| line.split(" ").collect_vec()).rev().collect_vec();
     let mut sizes = Vec::new();

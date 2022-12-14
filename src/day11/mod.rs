@@ -60,7 +60,7 @@ impl Monkey {
 }
 
 pub fn parse() -> Vec<Monkey> {
-    let input = include_str!("input")
+    let input = include_str!("input.txt")
         .lines()
         .filter(|line| !line.is_empty());
     let mut monkeys = Vec::new();

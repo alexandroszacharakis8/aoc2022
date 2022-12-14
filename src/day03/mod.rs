@@ -3,7 +3,7 @@ use std::collections::HashSet;
 use itertools::Itertools;
 
 pub fn part1() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let result: u64 = input
         .lines()
         .filter(|l| !l.is_empty())
@@ -30,7 +30,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let input = include_str!("input");
+    let input = include_str!("input.txt");
     let lines = input
         .lines()
         .filter(|l| !l.is_empty())

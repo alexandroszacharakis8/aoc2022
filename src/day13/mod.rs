@@ -98,7 +98,7 @@ pub fn compare_lists(left: List, right: List) -> Compare {
 
 
 pub fn part1() {
-    let packets = include_str!("input")
+    let packets = include_str!("input.txt")
         .lines()
         .filter(|line| !line.is_empty())
         .map(|line| parse_list(&line.chars().collect_vec()))
@@ -113,7 +113,7 @@ pub fn part1() {
 }
 
 pub fn part2() {
-    let mut packets = include_str!("input")
+    let mut packets = include_str!("input.txt")
         .lines()
         .filter(|line| !line.is_empty())
         .map(|line| parse_list(&line.chars().collect_vec()))
