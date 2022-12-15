@@ -6,8 +6,8 @@ fn main() {
         solve();
     }
     else {
-        puzzles::day14::part1();
-        puzzles::day14::part2();
+        puzzles::day15::part1();
+        puzzles::day15::part2();
     }
 }
 
@@ -67,5 +67,10 @@ fn solve() {
     println!("Day 14:");
     puzzles::day14::part1();
     puzzles::day14::part2();
+    println!();
+    // needs optimization... 
+    println!("Day 15:");
+    puzzles::day15::part1();
+    puzzles::day15::part2();
     println!();
 }
